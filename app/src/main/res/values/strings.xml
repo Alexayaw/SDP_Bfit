@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SDP_Bfit</string>
+    <string name="scan">Scan</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snack">Snack</string>
+    <string name="daily_calories_quota">0/3000</string>
+    <string name="calories">Calories</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="yes">Yes</string>
+</resources>

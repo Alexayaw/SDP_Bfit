@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_workout"
+        android:name="com.example.sdp_bfit.workout.WorkoutFragment"
+        android:label="Workout"
+        tools:layout="@layout/fragment_workout" />
+
+    <fragment
+        android:id="@+id/navigation_calories"
+        android:name="com.example.sdp_bfit.calories.CaloriesFragment"
+        android:label="Calories"
+        tools:layout="@layout/fragment_calories" />
+
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.sdp_bfit.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_sleep"
+        android:name="com.example.sdp_bfit.sleep.SleepFragment"
+        android:label="Sleep"
+        tools:layout="@layout/fragment_sleep" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.sdp_bfit.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

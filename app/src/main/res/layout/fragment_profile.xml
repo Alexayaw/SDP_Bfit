@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggrey"
+    android:paddingBottom="100dp">
+
+
+            <View
+                android:id="@+id/profile_top_black_view"
+                android:layout_width="wrap_content"
+                android:layout_height="280dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/profile_curve_view"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_bg_curve"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_top_black_view" />
+
+            <TextView
+                android:id="@+id/profile_txtProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_imageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_top_black_view" />
+
+    <TextView
+        android:id="@+id/profile_txtShowUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="Show User Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_imageView" />
+
+    <TextView
+        android:id="@+id/profile_txtShowUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="Show User E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUsername" />
+
+    <TextView
+                android:id="@+id/profile_txtShowUserWeight"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:hint="Weight"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.253"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserEmail" />
+
+            <TextView
+                android:id="@+id/profile_txtKG"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="kg"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.321"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserEmail" />
+
+    <TextView
+        android:id="@+id/profile_txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:text="Weight"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_verticaldivider1"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserWeight" />
+
+    <TextView
+                android:id="@+id/profile_txtShowUserHeight"
+                android:layout_width="46dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:hint="Height"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_txtShowUserEmail" />
+
+            <TextView
+                android:id="@+id/profile_txtCM"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="cm"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserEmail" />
+
+    <TextView
+        android:id="@+id/profile_txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:text="Height"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_verticaldivider2"
+        app:layout_constraintStart_toEndOf="@+id/profile_verticaldivider1"
+        app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserHeight" />
+
+    <TextView
+        android:id="@+id/profile_txtShowUserBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="BMI"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserEmail" />
+
+    <TextView
+        android:id="@+id/profile_txtBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:text="BMI"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toEndOf="@+id/profile_verticaldivider2"
+        app:layout_constraintTop_toBottomOf="@+id/profile_txtShowUserBMI" />
+
+    <View
+                android:id="@+id/profile_verticaldivider1"
+                android:layout_width="1dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.383"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/profile_txtShowUserEmail" />
+
+            <View
+                android:id="@+id/profile_verticaldivider2"
+                android:layout_width="1dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.64"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/profile_txtShowUserEmail" />
+
+    <View
+        android:id="@+id/card_editprofile"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_curve_view" />
+
+            <View
+                android:id="@+id/ic_pencil"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_edit"
+                app:layout_constraintEnd_toEndOf="@+id/card_editprofile"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/card_editprofile"
+                app:layout_constraintTop_toTopOf="@+id/card_editprofile" />
+
+            <TextView
+                android:id="@+id/txtEditProfile"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_editprofile"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toEndOf="@+id/ic_pencil"
+                app:layout_constraintTop_toTopOf="@+id/card_editprofile" />
+
+            <ToggleButton
+                android:id="@+id/profile_editprofile_tbtn_add_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tbtn_add_minus"
+                android:textOff=''
+                android:textOn=''
+                app:layout_constraintEnd_toEndOf="@+id/card_editprofile"
+                app:layout_constraintHorizontal_bias="0.90"
+                app:layout_constraintStart_toEndOf="@+id/txtEditProfile"
+                app:layout_constraintTop_toTopOf="@+id/card_editprofile" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_editprofile1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_editprofile">
+
+        <View
+            android:id="@+id/ic_pencil1"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/ic_edit"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toTopOf="@+id/card_editprofile1" />
+
+        <TextView
+            android:id="@+id/txtEditProfile1"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="text"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toEndOf="@+id/ic_pencil1"
+            app:layout_constraintTop_toTopOf="@+id/card_editprofile1" />
+
+        <ToggleButton
+            android:id="@+id/profile_editprofile_tbtn_add_minus1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_minus"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.90"
+            app:layout_constraintStart_toEndOf="@+id/txtEditProfile1"
+            app:layout_constraintTop_toTopOf="@+id/card_editprofile1" />
+
+        <TextView
+            android:id="@+id/profile_editprofile_txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="text"
+            android:text="Name"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditProfile1" />
+
+        <EditText
+            android:id="@+id/profile_editprofile_edittxtName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_txtName" />
+
+        <TextView
+            android:id="@+id/profile_editprofile_txtWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="text"
+            android:text="Weight"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_edittxtName" />
+
+        <EditText
+            android:id="@+id/profile_editprofile_edittxtWeight"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="Weight"
+            android:inputType="number"
+            android:text="              kg"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_txtWeight" />
+
+        <TextView
+            android:id="@+id/profile_editprofile_txtHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="text"
+            android:text="Height"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_edittxtWeight" />
+
+        <EditText
+            android:id="@+id/profile_editprofile_edittxtHeight"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="Height"
+            android:inputType="numberDecimal"
+            android:text="                   cm"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_txtHeight" />
+
+        <Button
+            android:id="@+id/profile_editprofile_btnSave"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_green"
+            android:fontFamily="@font/roboto"
+            android:text="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:backgroundTint="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_edittxtHeight" />
+
+        <Button
+            android:id="@+id/profile_editprofile_btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_green_border"
+            android:fontFamily="@font/roboto"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/green"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/card_editprofile1"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="@+id/card_editprofile1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_editprofile_edittxtHeight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/card_notification"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_editprofile1" />
+
+            <View
+                android:id="@+id/ic_notification"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_notification"
+                app:layout_constraintEnd_toEndOf="@+id/card_notification"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/card_notification"
+                app:layout_constraintTop_toTopOf="@+id/card_notification" />
+
+            <TextView
+                android:id="@+id/txtNotification"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="Notification"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_notification"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toEndOf="@+id/ic_notification"
+                app:layout_constraintTop_toTopOf="@+id/card_notification" />
+
+            <ToggleButton
+                android:id="@+id/profile_notification_tbtn_add_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tbtn_add_minus"
+                android:textOff=''
+                android:textOn=''
+                app:layout_constraintEnd_toEndOf="@+id/card_notification"
+                app:layout_constraintHorizontal_bias="0.90"
+                app:layout_constraintStart_toEndOf="@+id/txtNotification"
+                app:layout_constraintTop_toTopOf="@+id/card_notification" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_notification1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_editprofile1">
+
+        <View
+            android:id="@+id/ic_notification1"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/ic_notification"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toTopOf="@+id/card_notification1" />
+
+        <TextView
+            android:id="@+id/txtNotification1"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="text"
+            android:text="Notification"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toEndOf="@+id/ic_notification1"
+            app:layout_constraintTop_toTopOf="@+id/card_notification1" />
+
+        <ToggleButton
+            android:id="@+id/profile_notification_tbtn_add_minus1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_minus"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintHorizontal_bias="0.90"
+            app:layout_constraintStart_toEndOf="@+id/txtNotification1"
+            app:layout_constraintTop_toTopOf="@+id/card_notification1" />
+
+        <View
+            android:id="@+id/profile_notification_horizontaldivider1"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotification1" />
+
+        <TextView
+            android:id="@+id/txtSleepReminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sleep Reminder"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toTopOf="@+id/profile_notification_horizontaldivider1" />
+
+        <ToggleButton
+            android:id="@+id/profile_notification_radbtn1"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_notification_horizontaldivider1" />
+
+        <View
+            android:id="@+id/profile_notification_horizontaldivider2"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/txtSleepReminder" />
+
+        <TextView
+            android:id="@+id/txtWorkoutReminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Workout Reminder"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toTopOf="@+id/profile_notification_horizontaldivider2" />
+
+        <ToggleButton
+            android:id="@+id/profile_notification_radbtn2"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_notification_horizontaldivider2" />
+
+        <View
+            android:id="@+id/profile_notification_horizontaldivider3"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/txtWorkoutReminder" />
+
+        <TextView
+            android:id="@+id/txtPeriodReminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Period Reminder"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toTopOf="@+id/profile_notification_horizontaldivider3" />
+
+        <ToggleButton
+            android:id="@+id/profile_notification_radbtn3"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_notification_horizontaldivider3" />
+
+        <Button
+            android:id="@+id/profile_notification_btnSave"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_green"
+            android:fontFamily="@font/roboto"
+            android:text="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:backgroundTint="@color/green"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeriodReminder" />
+
+        <Button
+            android:id="@+id/profile_notification_btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_green_border"
+            android:fontFamily="@font/roboto"
+            android:text="Cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/green"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/card_notification1"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="@+id/card_notification1"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeriodReminder" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/card_customization"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_notification1" />
+
+            <View
+                android:id="@+id/ic_customization"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_customization"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/card_customization"
+                app:layout_constraintTop_toTopOf="@+id/card_customization" />
+
+            <TextView
+                android:id="@+id/txtCustomization"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="Customization"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toEndOf="@+id/ic_customization"
+                app:layout_constraintTop_toTopOf="@+id/card_customization" />
+
+            <ToggleButton
+                android:id="@+id/profile_customization_tbtn_add_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tbtn_add_minus"
+                android:textOff=''
+                android:textOn=''
+                app:layout_constraintEnd_toEndOf="@+id/card_customization"
+                app:layout_constraintHorizontal_bias="0.90"
+                app:layout_constraintStart_toEndOf="@+id/txtCustomization"
+                app:layout_constraintTop_toTopOf="@+id/card_customization" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_customization1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_notification1">
+
+
+            <View
+                android:id="@+id/ic_customization1"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_customization"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toTopOf="@+id/card_customization1" />
+
+            <TextView
+                android:id="@+id/txtCustomization1"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="Customization"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toEndOf="@+id/ic_customization1"
+                app:layout_constraintTop_toTopOf="@+id/card_customization1" />
+
+            <ToggleButton
+                android:id="@+id/profile_customization_tbtn_add_minus1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_minus"
+                android:textOff=''
+                android:textOn=''
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintHorizontal_bias="0.90"
+                app:layout_constraintStart_toEndOf="@+id/txtCustomization1"
+                app:layout_constraintTop_toTopOf="@+id/card_customization1" />
+
+            <View
+                android:id="@+id/profile_customization_horizontaldivider1"
+                style="@style/Divider"
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtCustomization1" />
+
+        <TextView
+            android:id="@+id/txtDailyQuote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Daily Quote"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_customization1"
+            app:layout_constraintTop_toTopOf="@+id/profile_customization_horizontaldivider1" />
+
+        <ToggleButton
+            android:id="@+id/profile_customization_radbtn1"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider1" />
+
+            <View
+                android:id="@+id/profile_customization_horizontaldivider2"
+                style="@style/Divider"
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtDailyQuote" />
+
+        <TextView
+            android:id="@+id/txtCalander"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Calander"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider2" />
+
+        <ToggleButton
+            android:id="@+id/profile_customization_radbtn2"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider2" />
+
+            <View
+                android:id="@+id/profile_customization_horizontaldivider3"
+                style="@style/Divider"
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtCalander" />
+
+        <TextView
+            android:id="@+id/txtAverageSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Average Steps"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider3" />
+
+        <ToggleButton
+            android:id="@+id/profile_customization_radbtn3"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider3" />
+
+            <View
+                android:id="@+id/profile_customization_horizontaldivider4"
+                style="@style/Divider"
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtAverageSteps" />
+
+        <TextView
+            android:id="@+id/txtDailyCalories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Daily Calories"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider4" />
+
+        <ToggleButton
+            android:id="@+id/profile_customization_radbtn4"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider4" />
+
+            <View
+                android:id="@+id/profile_customization_horizontaldivider5"
+                style="@style/Divider"
+                android:layout_width="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtDailyCalories" />
+
+        <TextView
+            android:id="@+id/txtAverageSleep"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto"
+            android:text="Average Sleep"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider5" />
+
+        <ToggleButton
+            android:id="@+id/profile_customization_radbtn5"
+            android:layout_width="51dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/tbtn_on_off"
+            android:textOff=''
+            android:textOn=''
+            app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+            app:layout_constraintTop_toBottomOf="@+id/profile_customization_horizontaldivider5" />
+
+            <Button
+                android:id="@+id/profile_customization_btnSave"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_green"
+                android:fontFamily="@font/roboto"
+                android:text="Save"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:backgroundTint="@color/green"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="@id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtAverageSleep" />
+
+            <Button
+                android:id="@+id/profile_customization_btnCancel"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_green_border"
+                android:fontFamily="@font/roboto"
+                android:text="Cancel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/green"
+                app:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/card_customization1"
+                app:layout_constraintHorizontal_bias="0.78"
+                app:layout_constraintStart_toStartOf="@+id/card_customization1"
+                app:layout_constraintTop_toBottomOf="@+id/txtAverageSleep" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/card_logout"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_customization1" />
+
+            <View
+                android:id="@+id/ic_logout"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/ic_logout"
+                app:layout_constraintEnd_toEndOf="@+id/card_logout"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="@+id/card_logout"
+                app:layout_constraintTop_toTopOf="@+id/card_logout" />
+
+            <TextView
+                android:id="@+id/txtLogout"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/roboto_bold"
+                android:inputType="text"
+                android:text="Log Out"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/card_logout"
+                app:layout_constraintHorizontal_bias="0.20"
+                app:layout_constraintStart_toEndOf="@+id/ic_logout"
+                app:layout_constraintTop_toTopOf="@+id/card_logout" />
+
+            <ToggleButton
+                android:id="@+id/profile_logout_tbtn_add_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tbtn_add_minus"
+                android:textOff=''
+                android:textOn=''
+                app:layout_constraintEnd_toEndOf="@+id/card_logout"
+                app:layout_constraintHorizontal_bias="0.90"
+                app:layout_constraintStart_toEndOf="@+id/txtLogout"
+                app:layout_constraintTop_toTopOf="@+id/card_logout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
