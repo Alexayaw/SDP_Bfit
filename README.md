@@ -9,5 +9,5 @@ between the external devices and the system.
 
 Developed using Java and Android Studio.
 
-### App UI Overview (still in development) 
+### App UI Overview 
 ![](https://github.com/Alexayaw/SDP_Bfit/blob/master/Bfit.gif)
